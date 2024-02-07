@@ -1,5 +1,6 @@
-import React from "react";
+
 import { Table } from "antd";
+import SideMenu from "./SideMenu";
 
 const MyClaimsTable = () => {
   const claims = [
@@ -44,13 +45,16 @@ const MyClaimsTable = () => {
   ];
 
   return (
-    <Table
-      dataSource={claims}
-      columns={columns}
-      bordered
-      pagination={false}
-      rowKey="id"
-    />
+    <div className=" flex gap-64">
+      <SideMenu />
+      <Table
+        dataSource={claims}
+        columns={columns}
+        bordered
+        pagination={false}
+        rowKey="id"
+      />
+    </div>
   );
 };
 
