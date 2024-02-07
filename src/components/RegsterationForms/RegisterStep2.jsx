@@ -6,48 +6,81 @@ import Uploader from "../UI/Uploader";
 const RegisterStep2 = () => {
   return (
     <div className="">
-      <div className=" flex sm:flex-col justify-between">
+      <div className=" flex justify-between">
         <div>
           <div className=" flex flex-col">
             <div className=" w-[350px] flex flex-col gap-3 m-2">
               <label htmlFor="first-Name" className="">
-                First Name <span className=" text-red-500">*</span>
+                Plate No. <span className=" text-red-500">*</span>
               </label>
-              <Input label="Firstname" id="first-Name" className="" />
+              <Input
+                label="Plate No."
+                id="first-Name"
+                className=""
+                placeholder="A53489"
+                type="number"
+              />
             </div>
             <div className=" w-[350px] flex flex-col gap-3 m-2 ">
               <label htmlFor="last-Name" className="">
-                last Name <span className=" text-red-500">*</span>
+                Engine No <span className=" text-red-500">*</span>
               </label>
-              <Input label="Lastname" id="last-Name" className="" />
+              <Input
+                label="  Engine No"
+                id="last-Name"
+                className=""
+                placeholder="A53489"
+                type="number"
+              />
             </div>
           </div>
           <div className=" flex flex-col">
             <div className=" w-[350px] flex flex-col gap-3 m-2">
               <label htmlFor="first-Name" className="">
-                First Name <span className=" text-red-500">*</span>
+                Type of Body <span className=" text-red-500">*</span>
               </label>
-              <Input label="Firstname" id="first-Name" className="" />
+              <Input
+                label="Type of Body"
+                id="first-Name"
+                className=""
+                placeholder="suv"
+              />
             </div>
             <div className=" w-[350px] flex flex-col gap-3 m-2 ">
               <label htmlFor="last-Name" className="">
-                last Name <span className=" text-red-500">*</span>
+                Year of Purchase <span className=" text-red-500">*</span>
               </label>
-              <Input label="Lastname" id="last-Name" className="" />
+              <Input
+                label="Year of Purchase"
+                id="last-Name"
+                className=""
+                placeholder="2024"
+                type="number"
+              />
             </div>
           </div>
           <div className=" flex flex-col">
             <div className=" w-[350px] flex flex-col gap-3 m-2">
               <label htmlFor="first-Name" className="">
-                First Name <span className=" text-red-500">*</span>
+                Chasis No <span className=" text-red-500">*</span>
               </label>
-              <Input label="Firstname" id="first-Name" className="" />
+              <Input
+                label="Chasis No "
+                id="first-Name"
+                className=""
+                placeholder="138113"
+              />
             </div>
             <div className=" w-[350px] flex flex-col gap-3 m-2 ">
               <label htmlFor="last-Name" className="">
-                last Name <span className=" text-red-500">*</span>
+                Make and Model <span className=" text-red-500">*</span>
               </label>
-              <Input label="Lastname" id="last-Name" className="" />
+              <Input
+                label="Model"
+                id="last-Name"
+                className=""
+                placeholder="Toyota Rav-4"
+              />
             </div>
           </div>
         </div>
@@ -56,29 +89,25 @@ const RegisterStep2 = () => {
           <div className=" flex flex-col">
             <div className=" w-[350px] flex flex-col gap-3 m-2">
               <label htmlFor="first-Name" className="">
-                First Name <span className=" text-red-500">*</span>
+                Duty Paid Value <span className=" text-red-500">*</span>
               </label>
-              <Input label="Firstname" id="first-Name" className="" />
+              <Input
+                label="Duty Paid Value"
+                id="first-Name"
+                className=""
+                placeholder="4000000"
+              />
             </div>
             <div className=" w-[350px] flex flex-col gap-3 m-2 ">
               <label htmlFor="last-Name" className="">
-                last Name <span className=" text-red-500">*</span>
+                Horse Power<span className=" text-red-500">*</span>
               </label>
-              <Input label="Lastname" id="last-Name" className="" />
-            </div>
-          </div>
-          <div className=" flex flex-col">
-            <div className=" w-[350px] flex flex-col gap-3 m-2">
-              <label htmlFor="first-Name" className="">
-                First Name <span className=" text-red-500">*</span>
-              </label>
-              <Input label="Firstname" id="first-Name" className="" />
-            </div>
-            <div className=" w-[350px] flex flex-col gap-3 m-2 ">
-              <label htmlFor="last-Name" className="">
-                last Name <span className=" text-red-500">*</span>
-              </label>
-              <Input label="Lastname" id="last-Name" className="" />
+              <Input
+                label="Horse Power"
+                id="last-Name"
+                className=""
+                placeholder="450"
+              />
             </div>
           </div>
           <div>

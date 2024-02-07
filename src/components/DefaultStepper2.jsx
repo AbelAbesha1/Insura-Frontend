@@ -6,8 +6,11 @@ import RegisterStep3 from "./RegsterationForms/RegisterStep3";
 import SideMenu from "./SideMenu";
 import ProfilePage from "./ProfilePage";
 import MyClaimsTable from "./MyClaimsTable";
+import ClaimForm2 from "./ClaimForms/ClaimForm2";
+import ClaimForm3 from "./ClaimForms/ClaimForm3";
+import NavBar from "./NavBar";
 
-export function DefaultStepper() {
+export function DefaultStepper2() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [isLastStep, setIsLastStep] = React.useState(false);
   const [isFirstStep, setIsFirstStep] = React.useState(false);
@@ -18,14 +21,10 @@ export function DefaultStepper() {
   const renderForm = () => {
     switch (activeStep) {
       case 0:
-        return <RegisterStep1 />;
+        return <ClaimForm2 />;
       case 1:
-        return <RegisterStep2 />;
-      case 2:
-        return <RegisterStep3 />;
-      case 3:
-        return <MyClaimsTable />;
-      // Add cases for other steps as needed
+        return <ClaimForm3 />;
+
       default:
         return null;
     }
@@ -36,13 +35,13 @@ export function DefaultStepper() {
       <div>
         <SideMenu />
       </div>
-      <div className="w-full bg-white z-50 py-4 px-12 relative">
+      <div className="w-full py-4 px-12 relative mt-4">
         <Stepper
           color="blue"
           activeStep={activeStep}
           isLastStep={(value) => setIsLastStep(value)}
           isFirstStep={(value) => setIsFirstStep(value)}
-          className=" sticky bg-white top-0 z-[1000]"
+          className=" sticky top-0 z-[1000] bg-white"
         >
           <Step
             activeClassName=" bg-green-600"
@@ -51,17 +50,11 @@ export function DefaultStepper() {
             1
           </Step>
           <Step
-            className=" bg-blue-gray-100"
+            className=" bg-blue-gray-100 "
             activeClassName=" bg-green-600"
             onClick={() => setActiveStep(1)}
           >
             2
-          </Step>
-          <Step
-            activeClassName=" bg-green-600"
-            onClick={() => setActiveStep(2)}
-          >
-            3
           </Step>
         </Stepper>
         {renderForm()}
