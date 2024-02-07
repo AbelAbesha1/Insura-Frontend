@@ -151,10 +151,10 @@ const Footer = () => {
           </div>
           <div>
             <p className=" text-[14px] font-[400] text-[#67727c]">
-              Copyright © 2021{" "}
+              Copyright © 2024{" "}
               <span className="text-[#0071cc] hover:text-[#252b33] cursor-pointer">
                 {" "}
-                Dalloltech.
+                InsuraFlow.
               </span>{" "}
               All Rights Reserved.
             </p>
