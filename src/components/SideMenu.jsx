@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 function SideMenu() {
   return (
-    <div className="bg-gray-800 h-screen w-52 flex flex-col justify-between sticky top-0">
+    <div className="bg-[#1F36C7] h-screen w-52 flex flex-col justify-between sticky top-0">
       <div className="p-4">
         <ul className="space-y-2">
           <li>
